@@ -44,10 +44,6 @@ const EmpDetails=()=>{
                             <p>{val.email}</p>
                             <p>{val.role}</p>
                             <p>{val.status}</p>
-
-                            
-
-
                         </div>
                     ))
                 }

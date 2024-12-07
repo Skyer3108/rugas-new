@@ -25,15 +25,17 @@ const LoginPopUp = () => {
 
       
         e.preventDefault();
-        console.log("Hello",data)
+        
 
         let newUrl =currentState==='Login'?`${url}/api/user/login`:`${url}/api/user/register`
 
         try{
 
             let res = await axios.post(newUrl, data)
+
+            console.log("HELLO",res.data)
              
-            if (res.data) {
+            if (res.data.status===200) {
 
 
                 setToken(res.data.token)
@@ -45,8 +47,10 @@ const LoginPopUp = () => {
                 alert('User login sucessfully')
             navigate(res.data.role === "admin" ? "/admin-panel" : "/employee-panel")
                
-            console.log(res,2)
+            
             } else {
+
+                console.log('ERRORRR')
                 alert(res.data.message)
             }
 

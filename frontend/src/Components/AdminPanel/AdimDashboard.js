@@ -38,6 +38,13 @@ const AdminDashboard = () => {
     }
 
 
+    const handleLogout=()=>{
+        localStorage.removeItem('token')
+        localStorage.removeItem("role");
+        localStorage.removeItem("id");
+        window.location.reload()
+    }
+
     const showUpdate=()=>{
 
         setShowUpdate(!showUpdateFields)
@@ -88,7 +95,12 @@ const AdminDashboard = () => {
 
             <div className='admin'>
 
-                <h1>Admin Dahboard</h1>
+
+<div className="nav">
+<h1>Admin Dahboard</h1>
+<button onClick={handleLogout}>Logout</button>
+</div>
+                
 
 
 

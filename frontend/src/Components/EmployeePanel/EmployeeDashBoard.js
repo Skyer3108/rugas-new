@@ -13,6 +13,16 @@ const [reportData,setReportData]=useState()
 const [reportShow,setReportShow]=useState(false)
 
 
+
+const handleLogout=()=>{
+    localStorage.removeItem('token')
+    localStorage.removeItem("role");
+    localStorage.removeItem("id");
+
+    alert('Logout sucessfully')
+    window.location.reload()
+    
+}
 const handleShow=()=>{
     setReportShow(!reportShow)
 }
@@ -59,7 +69,7 @@ console.log('REPORT',val)
                 <button className='btn-1'>Report</button>
 
                 
-                <button className='btn-2'>Log OUt</button>
+                <button onClick={handleLogout} className='btn-2'>Log OUt</button>
             </div>
             </div>
             

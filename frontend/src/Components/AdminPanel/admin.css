@@ -1,11 +1,21 @@
-.admin{
+/* .admin{
     margin: 20px;
-}
+} */
 .laptop-card{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     
+}
+.nav{
+    display: flex;
+    margin-bottom: 20px;
+}
+.nav button{
+    background-color: red;
+    cursor: pointer;
+    color: white;
+
 }
 .card{
     margin-top: 20px;
