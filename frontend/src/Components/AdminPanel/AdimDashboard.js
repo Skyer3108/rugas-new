@@ -6,6 +6,7 @@ import './admin.css'
 import LaptopList from "./LaptopList.js/LaptopLists"
 import EditLaptop from "./LaptopList.js/EditLaptop"
 import AssignLaptop from "./AssignLaptop/AssignLaptop"
+import EmpDetails from "./EmpDetails/EmpDetails"
 const AdminDashboard = () => {
 
     const [showAddLap, setShowAddLap] = useState(false)
@@ -135,7 +136,8 @@ const AdminDashboard = () => {
 
 
                 </div>
-
+ 
+ <EmpDetails/>
 
                <LaptopList  setEditLaptoData={setEditLaptoData} lists={laptopsData.data} showUpdate={showUpdate}/>
             </div>

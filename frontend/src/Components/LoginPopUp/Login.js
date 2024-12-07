@@ -42,9 +42,9 @@ const LoginPopUp = () => {
                 localStorage.setItem("role", res.data.role);
                 localStorage.setItem("id", res.data.id);
 
-    
+                alert('User login sucessfully')
             navigate(res.data.role === "admin" ? "/admin-panel" : "/employee-panel")
-
+               
             console.log(res,2)
             } else {
                 alert(res.data.message)
