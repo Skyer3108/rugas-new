@@ -1,0 +1,63 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(206, 255, 196);
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap:20px
+
+
+}
+.nav button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.btn-2{
+   
+    background-color: tomato;
+    
+}
+.btn-1{
+   
+    background-color: red;
+   
+}
+.assign-laptop .btn-1{
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+}
+.assign-details{
+    padding: 30px;
+   font-size: 30px;
+   font-weight: bold;
+}
+.assign{
+    display: flex;
+    margin-left: 10px;
+}
+.assign-laptop{
+    background-color:#1af2f2;
+    width: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    
+    border-radius: 10px;
+}
