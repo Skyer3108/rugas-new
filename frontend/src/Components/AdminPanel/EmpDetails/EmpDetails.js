@@ -24,10 +24,10 @@ const EmpDetails=()=>{
     },[])
 
     return (
-        <div>
+        <div className="lap">
 
            
-            <h1>Laptops List</h1>
+            <h1>Employees List</h1>
 
             <div className='list-table'>
                 <div className="list-table-formate-emp title">

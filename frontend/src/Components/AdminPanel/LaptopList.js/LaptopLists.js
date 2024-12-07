@@ -36,7 +36,7 @@ const LaptopList = ({ lists ,showUpdate,setEditLaptoData}) => {
 
     console.log(lists)
     return (
-        <div>
+        <div className='lap'>
 
            
             <h1>Laptops List</h1>

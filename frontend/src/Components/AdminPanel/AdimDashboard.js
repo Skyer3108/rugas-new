@@ -61,7 +61,7 @@ const AdminDashboard = () => {
         }
 
         getLaptops()
-    }, [])
+    }, [url])
 
     useEffect(()=>{
 
@@ -80,7 +80,7 @@ const AdminDashboard = () => {
     },[])
 
     return (
-        <div>
+        <div className="main">
             {
 
                 showAddLap ? <AddLaptop addLaptop={addLaptop} /> : ""}

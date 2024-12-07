@@ -7,9 +7,11 @@
     flex-wrap: wrap;
     
 }
+
 .nav{
     display: flex;
     margin-bottom: 20px;
+   
 }
 .nav button{
     background-color: red;
@@ -66,4 +68,10 @@
     background-color:red;
 
 
+}
+.laptop-card{
+    padding: 20px;
+}
+.btns{
+    padding: 20px;
 }
