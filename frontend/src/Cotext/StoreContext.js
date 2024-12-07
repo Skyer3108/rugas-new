@@ -3,7 +3,7 @@ import axios from  'react'
 export const StoreContext=createContext()
 const ContextStore=(props)=>{
 
-    const url='http://localhost:5000'
+    const url='https://rugas-backend-new.onrender.com'
 
     const [token,setToken]=useState('')
 
