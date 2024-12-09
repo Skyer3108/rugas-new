@@ -1,6 +1,7 @@
 const express=require('express')
 
 const { fetchLaptopsAssignToEmployee, assignLaptoptoEmp } = require('../controller/assignController')
+const { authProtector, admin } = require('../middleware/authMiddleware')
 
 const assignRouter=express.Router()
 

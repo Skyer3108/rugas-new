@@ -30,9 +30,11 @@ const EditLaptop = ({ showUpdate,editLaptopData }) => {
     
 const handleUpdate=async()=>{
 
-   
+   let token=localStorage.getItem('token')
 try{
-    const res=await axios.put(`${url}/api/laptop/${editLaptopData._id}`,newData)
+    const res=await axios.put(`${url}/api/laptop/${editLaptopData._id}`,newData,{
+        headers: { Authorization: `Bearer ${token}` }
+    })
    if(res.status==200){
     alert('Laptop updated successfully!')
     window.location.reload();

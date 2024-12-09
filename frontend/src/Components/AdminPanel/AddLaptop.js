@@ -27,9 +27,13 @@ const AddLaptop = ({ addLaptop }) => {
 
     const handleLaptop = async () => {
 
+        let token=localStorage.getItem('token')
+        console.log("TOKEN",token)
        
 console.log(laptop)
-        let res = await axios.post(`${url}/api/laptop/post-loptop`, laptop)
+        let res = await axios.post(`${url}/api/laptop/post-loptop`, laptop,{
+            headers: { Authorization: `Bearer ${token}` }
+        })
 
         console.log("Add",res)
 

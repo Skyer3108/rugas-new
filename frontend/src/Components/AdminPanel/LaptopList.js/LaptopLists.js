@@ -13,9 +13,13 @@ const LaptopList = ({ lists ,showUpdate,setEditLaptoData}) => {
 
     const handelDelete = async (id) => {
 
+        let token=localStorage.getItem('token')
+
         try {
 
-            const res = await axios.delete(`${url}/api/laptop/${id}`)
+            const res = await axios.delete(`${url}/api/laptop/${id}`,{
+                headers: { Authorization: `Bearer ${token}` }
+            })
             console.log('Dlelte', res)
             if (res) {
                 alert("Laptop deleted successfully!");
